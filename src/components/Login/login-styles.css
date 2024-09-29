@@ -1,0 +1,101 @@
+body * {
+    box-sizing: border-box;
+}
+  
+  body {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    background-color: white;
+}
+
+.userWelcome {
+    margin: auto;
+    width: 100vw;
+    height: 90vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.welcome, .connect {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 90%;
+    text-align: center;
+}
+
+.welcome {
+    margin-bottom: -50px;
+}
+
+.connect {
+    margin-top: -50px;
+}
+
+.welcome h1 {
+    font-size: 28px;
+}
+
+.welcome p {
+    margin-top: -10px;
+    color:#00AD0E;
+    font-size: 18px;
+}
+
+.connect h2 {
+    color: #5A5353;
+    font-size: 20px;
+}
+
+/* Google Button */
+
+.btn-container {
+    width: 80%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+@import url(https://fonts.googleapis.com/css?family=Roboto:500);
+.google-btn {
+  width: 310px;
+  height: 64px;
+  background-color: white;
+  border-radius: 5px;
+  outline: none;
+  border: 1px solid #BABABA;
+  box-shadow: 0px 5px 5px #BABABA;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+
+.google-btn:hover {
+    box-shadow: 0 0 6px #00AD0E;
+}
+
+.google-btn:active {
+background: #D9D9D9;
+}
+
+.google-icon-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+
+.google-icon {
+  height: 60%;
+}
+
+.btn-text {
+  color: #959292;
+  font-size: 20px;
+  letter-spacing: 0.2px;
+  font-family: "Roboto";
+}

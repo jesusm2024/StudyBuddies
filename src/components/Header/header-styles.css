@@ -1,0 +1,57 @@
+body * {
+    box-sizing: border-box;
+}
+  
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+  background-color: white;
+}
+
+.appHeader {
+  display: flex;
+  background-color: #D9D9D9;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0px 7%;
+  height: 10vh;
+}
+
+.appHeader img {
+  height: 80%;
+}
+
+.setupHeader {
+  display: flex;
+  height: 10vh;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #D9D9D9;
+  padding: 0 10%;
+}
+
+.currentClass {
+  display: flex;
+  height: 60%;
+  width: 80%;
+  align-items: center;
+  gap: 10px;
+}
+
+h1 {
+  font-size: x-large;
+}
+.logoImg {
+  height: 50%;
+}
+
+.nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 90%;
+}
+
+.myProfilePic {
+  border-radius: 50%;
+}

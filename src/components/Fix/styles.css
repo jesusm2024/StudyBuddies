@@ -1,0 +1,336 @@
+body * {
+    box-sizing: border-box;
+}
+  
+  body {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    background-color: white;
+}
+
+.appHeader {
+  display: flex;
+  background-color: #D9D9D9;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0px 7%;
+  height: 10vh;
+}
+
+.appHeader img {
+  height: 80%;
+}
+
+.setupHeader {
+  display: flex;
+  height: 10vh;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #D9D9D9;
+  margin: 0 -13%;
+  padding: 0 13%;
+}
+
+.currentClass {
+  display: flex;
+  height: 60%;
+  width: 80%;
+  align-items: center;
+  gap: 10px;
+}
+
+h1 {
+  font-size: x-large;
+}
+.logoImg {
+  height: 50%;
+}
+
+.nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 90%;
+}
+
+.myProfilePic {
+  height: 80%;
+}
+
+.suggestionContainer, .userSetupForm, .matchContent {
+  width: 80%;
+  margin: auto;
+}
+
+.profileContainer 
+{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* border: 1px solid black; */
+}
+
+.schedule {
+  width: 100%;
+  margin-bottom: 10px;
+}
+
+.profilePic 
+{
+  border-radius: 50%;
+  display: inline-block;
+  padding: 10px;
+}
+
+/* Checklist */
+
+.checklist {
+  display: flex;
+  gap: 5px;
+}
+
+.checklist ul {
+  list-style-type: none;
+  margin: 0px;
+  padding: 0px;
+  display: flex;
+  gap: 5px;
+  flex-direction: column;
+}
+
+.traitList {
+  display: flex;
+  gap: 5px;
+}
+
+.traitList li {
+  height: fit-content;
+  width: fit-content;
+  padding: 10px;
+  border-radius: 10px;
+  background-color: #D9D9D9;
+}
+
+/* Looking For */
+
+.lookingFor{
+  width: 100%;
+  height: 150px;
+  margin: 10px 0px; 
+  padding: 10px 30px;
+  background-color: #D9D9D9;
+  border-radius: 15px;
+}
+
+.lookingTitle 
+{
+  font-weight: bold;
+}
+
+.listContainer {
+  display: flex;
+  justify-content: space-between;
+}
+
+.listContainer ul {
+  list-style-type: none;
+  margin: 0px;
+  padding: 0px;
+}
+
+.column {
+  width: 40%;
+}
+
+.overlap {
+  background-color: #D9D9D9;
+  border-radius: 15px;
+  padding: 10px 30px;
+}
+
+.overlappedTimes {
+  columns: 2;
+  -webkit-columns: 2;
+  -moz-columns: 2;
+  list-style-type: none;
+  margin-left: 0;
+  padding-left: 0;
+}
+
+
+/* Buttons  */
+
+.buttonContainer 
+{
+  display: flex;
+  justify-content: space-between;
+  margin: 20px 0px;
+  /* border: 1px solid red; */
+  height: 50px;
+}
+
+.nextButton 
+{
+  font-size: large;
+  font-weight: bold;
+  color: black;
+  border: none;
+  width: 45%;
+  background-color: #D9D9D9;
+  border-radius: 15px;
+}
+
+.interestButton {
+  font-size: large;
+  font-weight: bold;
+  color: black;
+  border: none;
+  width: 45%;
+  background-color: #89D76D;
+  border-radius: 15px;
+}
+
+.nextButton:hover {
+  background-color: #4c4c4c;
+  color: white;
+}
+
+.interestButton:hover {
+  background-color: #3b7825;
+  color: white;
+}
+
+/* Setup Form */
+.userSetup > label {
+  display: none;
+}
+
+.userSetup input[type=text], .userSetup input[type=email], .userSetup input[type=number] {
+  width: 100%;
+  border: 1px solid #5A5353;
+  height: 50px;
+  border-radius: 25px;
+  margin-bottom: 10px;
+  font-size: large;
+  color: #5A5353;
+}
+
+.userSetup input:focus {
+  outline: none;
+  border: 2px solid #00AD0E;
+}
+
+.userSetup input {
+  padding: 10px 20px;
+}
+
+.userSetup [type=text]::placeholder,  .userSetup input[type=email]::placeholder, .userSetup input[type=number]::placeholder {
+  color: #959292;
+  font-size: large;
+  vertical-align: middle;
+  
+}
+
+.userSetup input[type=radio] {
+  opacity: 0;
+  width: 0;
+  position: fixed;
+}
+
+.userSetup label[for=morning], .userSetup label[for=afternoon], .userSetup label[for=night] {
+  display: inline-block;
+  margin-bottom: 10px;
+  width: 100%;
+  border: 1px solid #5A5353;
+  height: 50px;
+  border-radius: 25px;
+  font-size: large;
+  padding: 10px 20px;
+  color: #5A5353;
+  text-align: center;
+}
+
+.userSetup input[type=submit], .matchContent button, .submitButton {
+  width: 100%;
+  height: 50px;
+  border-radius: 25px;
+  border: none;
+  font-size: large;
+  padding: 10px 20px;
+  color: white;
+  background-color: #00AD0E;
+  text-align: center;
+}
+
+.userSetup input[type="radio"]:checked+label {
+  border: 2px solid #00AD0E;
+  outline: none;
+}
+
+/* Matching */
+.matchContent {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.matchContent strong {
+  color: #00AD0E;
+}
+
+.matchContent p {
+  font-size: large;
+}
+
+/* Modal Matching */
+.matchedContent strong {
+  color: #00AD0E;
+}
+
+.matchedPopUp {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  left: 0;
+  top: 0;
+  background-color: rgba(0,0,0,0.5);
+}
+
+.matchedPopUpContent {
+  background-color: white;
+  margin: auto;
+  border-radius: 15px;
+  width: 80%;
+  margin-top: 40vh;
+}
+
+.matchedPopUpText {
+  text-align: center;
+  padding: 30px;
+}
+
+.matchedPopUpText strong {
+  color: #00AD0E;
+}
+
+.close {
+  background-color: #00AD0E;
+  color: rgb(255, 255, 255);
+  font-size: 20px;
+  font-weight: bold;
+  border-radius: 0px 0px 15px 15px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.close:hover, .close:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}

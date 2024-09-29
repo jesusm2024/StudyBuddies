@@ -1,0 +1,272 @@
+body * {
+    box-sizing: border-box;
+}
+  
+  body {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    background-color: white;
+}
+
+.suggestionContainer {
+    width: 80vw;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+}
+
+.profileContainer 
+{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* border: 1px solid black; */
+}
+
+.profilePic 
+{
+  border-radius: 50%;
+  display: inline-block;
+  padding: 10px;
+}
+
+/* Checklist */
+
+.checklist {
+    display: flex;
+    gap: 5px;
+  }
+  
+.checklist ul {
+list-style-type: none;
+margin: 0px;
+padding: 0px;
+display: flex;
+gap: 5px;
+flex-direction: column;
+}
+
+.traitList {
+display: flex;
+gap: 5px;
+}
+
+.traitList li {
+height: fit-content;
+width: fit-content;
+padding: 10px;
+border-radius: 8px;
+background-color: #D9D9D9;
+}
+
+/* Looking For */
+
+.lookingFor {
+width: 100%;
+height: 150px;
+margin: 10px 0px; 
+padding: 10px 30px;
+background-color: #D9D9D9;
+border-radius: 10px;
+}
+
+.lookingTitle {
+font-weight: bold;
+}
+
+.listContainer {
+display: flex;
+justify-content: space-between;
+}
+
+.listContainer ul {
+list-style-type: none;
+margin: 0px;
+padding: 0px;
+}
+
+.column {
+width: 40%;
+}
+
+.overlap {
+  width: 80vw;
+  border-radius: 10px;
+  margin-top: 5%;
+}
+
+.overlap p {
+  font-weight: bold;
+  color:#555;
+}
+
+.overlap h3 {
+  margin-bottom: -30px;
+}
+
+.scheduleDisplayContainer {
+  width: 100%;
+}
+
+.scheduleDisplayContainer input:hover {
+  cursor: default;
+}
+
+.scheduleDisplayContainer table {
+  width: 100%;
+  table-layout: fixed;
+}
+
+.scheduleDisplayContainer input[type="checkbox"] {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  width: 8.5vw;
+  height: 3.5vh;
+  border: 1px solid #555;
+  border-radius: 3px;
+  outline: none;
+}
+
+/* Buttons  */
+
+.buttonContainer {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  height: 50px;
+  margin-top: 30px;
+  margin-bottom: 50px;
+}
+
+.nextButton {
+  font-size: large;
+  font-weight: bold;
+  color: #413c3c;
+  border: none;
+  width: 48%;
+  background-color: #e0e0e0;
+  border-radius: 25px;
+}
+
+.interestButton {
+  font-size: large;
+  font-weight: bold;
+  color: white;
+  border: none;
+  width: 48%;
+  background-color: #00AD0E;
+  border-radius: 25px;
+}
+
+.nextButton:hover, .nextButton:active {
+  background-color: #cacaca;
+}
+
+.interestButton:hover, .interestButton:active {
+  opacity: 0.8;
+}
+
+@media (max-width: 500px) {
+  .buttonContainer {
+      margin-top: 20px;
+      margin-bottom: 40px;
+  }
+}
+
+/* Description Pop Up */
+
+.descPopUp {
+  display: block;
+  position: fixed;
+  z-index: 1;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  left: 0;
+  top: 0;
+  background-color: rgba(0,0,0,0.5);
+}
+
+.descPopUpContent {
+  background-color: white;
+  margin: auto;
+  border-radius: 15px;
+  width: 80%;
+  margin-top: 15vh;
+}
+
+.descPopUpText {
+  text-align: center;
+  font-size: x-large;
+  font-weight: 545;
+  padding: 50px;
+}
+
+
+.closeDesc {
+  background-color: #00AD0E;
+  color: rgb(255, 255, 255);
+  font-size: 20px;
+  font-weight: bold;
+  border-radius: 0px 0px 15px 15px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.closeDesc:hover, .closeDesc:active {
+  text-decoration: none;
+  cursor: pointer;
+  opacity: 0.8;
+}
+
+/* Interest Pop Up */
+
+.matchedPopUp {
+  display: block;
+  position: fixed;
+  z-index: 1;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  left: 0;
+  top: 0;
+  background-color: rgba(0,0,0,0.5);
+  }
+  
+.matchedPopUpContent {
+  background-color: white;
+  margin: auto;
+  border-radius: 15px;
+  width: 80%;
+  margin-top: 40vh;
+}
+
+.matchedPopUpText {
+  text-align: center;
+  padding: 30px;
+}
+
+.matchedPopUpText strong {
+  color: #00AD0E;
+}
+
+.close {
+  background-color: #00AD0E;
+  color: rgb(255, 255, 255);
+  font-size: 20px;
+  font-weight: bold;
+  border-radius: 0px 0px 15px 15px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.close:hover, .close:active {
+  text-decoration: none;
+  cursor: pointer;
+  opacity: 0.8;
+}
